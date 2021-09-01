@@ -1,0 +1,25 @@
+.black-block {
+    background-color: #222222;
+    color: white;
+    padding: 25px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.main-banner-area {
+    padding: 0px;
+    background-image: url("https://lh5.googleusercontent.com/p/AF1QipN5qdlxidAwKFdpCXBivT0MjgyseH4klnP8nxmL=w1080-k-no");
+    min-height: 400px;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+.banner-text-area {
+    background-color: rgb(34, 34, 34, 0.8);
+    margin-top: 15px;
+}
+
+.banner-text-area h1,
+.banner-text-area p {
+    color: white;
+}

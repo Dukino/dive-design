@@ -1,0 +1,23 @@
+<div class="col-xs-12 menu-item" [ngClass]="{'col-sm-6' : !isFullWidth}">
+  <div class="row">
+    <div class="col-xs-8">
+      <p class="menu-name">{{name}}</p>
+    </div>
+    <div class="col-xs-4">
+      <p class="price" *ngIf="price != 0">${{price}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10">
+      <p class="menu-desc">
+        <ng-content></ng-content>
+      </p>
+    </div>
+    <div class="col-xs-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12" *ngFor="let item of options">
+      <p class="menu-desc">{{item.option}} - ${{item.price}}</p>
+    </div>
+  </div>
+</div>

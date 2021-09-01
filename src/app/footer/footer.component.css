@@ -1,0 +1,15 @@
+* {
+  color: white;
+}
+
+.footer {
+    padding-top: 15px;
+    background-color: #222222;
+    min-height: 250px;
+}
+
+img.map {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}

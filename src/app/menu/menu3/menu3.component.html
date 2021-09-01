@@ -1,0 +1,160 @@
+<h1>Menu 3</h1>
+<p>Layout:<br>Full width items</p>
+<p>Category order:<br>Aperitivos, Soups and Salads, A La Carte, Texican, Hoosier</p>
+<hr>
+<div class="row">
+  <!-- Aperitivos -->
+  <div class="col-xs-12 col-sm-6">
+    <h2 class="cat-heading">Aperitivos</h2>
+    <hr>
+    <div class="row">
+      <app-menu-item name="House Chips & Salsa" price="3.50" [isFullWidth]="true"></app-menu-item>
+      <app-menu-item name="House Chips & Guac" price="5" [isFullWidth]="true"></app-menu-item>
+      <app-menu-item name="House Chips & Queso" price="5" [isFullWidth]="true"></app-menu-item>
+      <app-menu-item name="Breadsticks and Queso" price="7" [isFullWidth]="true"></app-menu-item>
+      <app-menu-item name="Fried Pickle Chips" price="5" [isFullWidth]="true"></app-menu-item>
+      <app-menu-item name="Chicharrones" price="4" [isFullWidth]="true"></app-menu-item>
+      <app-menu-item name="Dive Queso Fontanero" price="9" [isFullWidth]="true">
+        Layered Dip with your choice of Chorizo or Chili Con Carne, and Queso, Fresh Pico, Sour Cream, and Guac.
+      </app-menu-item>
+      <app-menu-item name="Totchos" price="10" [isFullWidth]="true">
+        Tater Tot Nachos! Where have these been all your life? Tater Tot's topped with Chili con carne, queso, lettuce,
+        fresh pico, jalapenos, sour cream, and guac.
+      </app-menu-item>
+      <app-menu-item name="Dozen Dive Wings" price="12" [isFullWidth]="true">
+        Buffalo - BBQ - Dive sauce with ranch or blue cheese.
+      </app-menu-item>
+      <app-menu-item name="Chicken Strips" price="8" [isFullWidth]="true">
+        Southern fried, grilled, or blackened with your choice of sauce and ranch or blue cheese.
+      </app-menu-item>
+      <app-menu-item name="Nachos" price="0" [isFullWidth]="true"
+        [options]="[{option: 'Vegetarian', price: '8'}, {option: 'Ground Beef', price: '10'}, {option: 'Chicken or Pork', price: '10'}, {option: 'Steak', price: '11'}]">
+        Topped with queso, refried beans, lettuce, fresh pico, jalapenos, sour cream, and guac.
+      </app-menu-item>
+      <app-menu-item name="Quesadilla" price="0" [isFullWidth]="true"
+        [options]="[{option: 'Cheese', price: '8.50'}, {option: 'Chicken', price: '9'}, {option: 'Steak', price: '9.50'}]">
+        Large flour tortilla with fresh pico and your choice of filling with a side of sour cream.
+      </app-menu-item>
+    </div>
+  </div>
+
+  <!-- Soups and Salads -->
+  <div class="col-xs-12 col-sm-6">
+    <h2 class="cat-heading">Soups & Salads</h2>
+    <hr>
+    <div class="row">
+      <app-menu-item [isFullWidth]="true" name="Soup" price="0"
+        [options]="[{option: 'Cup', price: '4'}, {option: 'Bowl', price: '6'}]">
+        Soup of the day or homemade Texas chili. Ask your server for details. Add cheese, onion, sour cream, or
+        jalapenos for 0.25 each.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Taco Salad" price="0"
+        [options]="[{option: 'Beef or Chicken', price: '9'}, {option: 'Steak or Pork', price: '10'}]">
+        Iceberg lettuce, tomatoes, onion, jalapenos, cheese blend, sour cream, and guac served in a tortilla bowl.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Garden Salad" price="4.50">
+        Iceberg lettuce, tomato, onion, cucumber, carrots, cheese blend, and croutons.
+      </app-menu-item>
+    </div>
+  </div>
+
+  <!-- A La Carte -->
+  <div class="col-xs-12 col-sm-6">
+    <h2 class="cat-heading">A La Carte</h2>
+    <hr>
+    <div class="row">
+      <app-menu-item [isFullWidth]="true" name="Basket of Fries" price="3.50"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Basket of Tots" price="4.50">
+        Loaded with cheese, bacon, and sour cream.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Basket of O-Rings" price="5"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Texican Taco" price="3"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Gringo Taco" price="3"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Vegetarian Taco" price="3.50"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Spanish Rice" price="2"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Refried Beans" price="2"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Guacamole" price="3"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Queso" price="3"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Chips" price="2.50"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Mimi's Mild Salsa" price="2"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Willie's Hot Salsa" price="2"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Salsa Verde" price="2"></app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Sour Cream" price="1"></app-menu-item>
+    </div>
+  </div>
+
+  <!-- Texican -->
+  <div class="col-xs-12 col-sm-6">
+    <h2 class="cat-heading">Texican</h2>
+    <p class="cat-desc">The Authentic Tex-Mex food we loved growing up from our family's kitchens! We are sharing a
+      taste of Texas made fresh, from scratch with our friends in Yankeeland! Cheers!</p>
+    <hr>
+    <div class="row">
+      <app-menu-item [isFullWidth]="true" name="Beer Battered Stuffed Avocado" price="12">
+        House Specialty and Texas Favorite
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Texican Taco Dinner" price="9">
+        Corn tortillas with either Chicken, Pork, Ground Beef, or Steak. Topped with Cilantro, Onion, and a Lime Wedge.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Gringo Taco Dinner" price="9">
+        Flour tortillas with either Chicken, Pork, Ground Beef, or Steak. Topped with Lettuce, Cheese, Tomato, and Sour
+        Cream.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Vegetarian Taco Dinner" price="10">
+        Corn tortillas, breaded Avocado slices, fresh pico, and chipotle sour cream.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Fish Taco Dinner" price="10">
+        Corn tortillas, breaded fish, fresh pico, and chipotle sour cream.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="The Knucklehead Burrito" price="9">
+        Because breakfast is the most important meal of the day Knuckleheads! Scrambled eggs, cheese blend, tater tots,
+        fresh pico, and your choie of bacon or chorizo.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="BURRITO'S BRO!" price="0"
+        [options]="[{option: 'Vegetarian or Steak', price: 10}, {option: 'Chicken, Pork, or Ground Beef', price: '9'}]">
+        Beans, rice, cheese, lettuce, onion, cilantro, and sour cream. Have it smothered with your choice of queso,
+        chili con carne, or salsa verda for an additional $3.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="House Enchilada Dinners" price="0"
+        [options]="[{option: 'Cheese and Onion: Topped with Chili Con Carne.', price: '11'}, {option: 'Chicken: Topped with Salsa Verde.', price: '11'}, {option: 'Beef: Topped with Ranchero Sauce.', price: '11'}]">
+        Topped with sour cream and sauce (see below).
+      </app-menu-item>
+    </div>
+    <br>
+    <p style="text-align: center; font-weight: bold">All Texican dinners served with beans and rice.</p>
+  </div>
+
+  <!-- Hoosier -->
+  <div class="col-xs-12 col-sm-6">
+    <h2 class="cat-heading">Hoosier</h2>
+    <p class="cat-desc">Southern hospitality requires us to cater to our guest's request. We are more than happy to
+      oblige. We are now "Spanking" our meat and "Pounding" the pork. Only the chicken and fish were spared n the making
+      of this menu! Cheers!</p>
+    <hr>
+    <div class="row">
+      <app-menu-item [isFullWidth]="true" name="Hand Spanked Cheese Burger" price="10">
+        Two 4oz Hand Spanked Patties and Your Choice of Cheese.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Breaded Tenderloin" price="9">
+        Pork Loin Pounded Out Thin in House in Honor of the "Kooler Keg."
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Catfish Sandwich" price="9">
+        Breaded, Grilled, or Blackened. Served with house made tartar.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Fish N' Chips" price="9">
+        Strips of catfish filet breaded and fried to order. Served with house-made tartar.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Chicken Sandwich" price="9">
+        Southern Fried, Grilled, or Blackened to order.
+      </app-menu-item>
+      <app-menu-item [isFullWidth]="true" name="Chicken N' Chips" price="9">
+        Southern Fried, Grilled, or Blackened to order. Served with your choice of Sauce and Ranch or Blue Cheese.
+      </app-menu-item>
+    </div>
+    <br>
+    <p style="text-align: center">All sandwiches served plain with a side of fries. Lettuce, tomato, onion, and pickles
+      upon request. Substitute tater tots, onion rings, cup of soup, or chili for $2. Substitute a house salad for $3.
+      Choice of cheese for $0.50, and add bacon (3 strips) for $1.50.</p>
+  </div>
+
+</div>

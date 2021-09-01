@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Special+Elite&display=swap");
+
+/* 
+    Colors:
+        Black #000000
+        White #ffffff
+        Red   #9e2b25
+        Blue  #2a628f
+*/
+
+/* Headings font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav a,
+p.black-block,
+p.menu-name {
+  font-family: "Special Elite", serif;
+}
+
+p.menu-name {
+  font-weight: bold;
+}
+
+p.menu-desc {
+  font-style: italic;
+}
+
+/* Non Headings font */
+p,
+a,
+div,
+span {
+  font-family: "Open Sans", serif;
+}
+
+.cat-desc,
+.cat-heading {
+  text-align: center;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container.white {
+  background-color: white;
+  padding-top: 15px;
+}
+
+nav.navbar {
+  margin-bottom: 0px;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #222222;
+}
+
+nav div ul li.active.home {
+  border-bottom: 5px solid white;
+}
+
+nav div ul li.active.menu {
+  border-bottom: 5px solid #9e2b25;
+}
+nav div ul li.active.about {
+  border-bottom: 5px solid #2a628f;
+}
